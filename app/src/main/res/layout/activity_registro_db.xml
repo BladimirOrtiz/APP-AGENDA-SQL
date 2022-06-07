@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    tools:context=".RegistroDB">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strRegistrar"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtNControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/strNControl"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/strNombre"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strCarrera"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/cbxCarreras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/carreras" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strSemestre"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/cbxSemestre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/Semestres" />
+    <Spinner
+        android:id="@+id/cbxGrupos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/grupos" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:gravity="center|center_horizontal"
+        android:text="@string/strAlta" />
+
+    <Button
+        android:id="@+id/btnListar"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:gravity="center|center_horizontal"
+        android:text="LISTAR" />
+</LinearLayout>
